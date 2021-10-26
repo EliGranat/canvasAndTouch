@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mister canvas</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="btn-modal-opt" onclick="openModalTools()"></div>
+
+    <section class="tools-user">
+        <div class="share-container"> </div>
+        <input value="url" type="user-msg" id="user-msg" hidden>
+        <select name="shape-selector" id="shape" onchange="onChangeShape(this.value)">
+                <option value="lines">
+                 lines
+                </option>
+           <option value="line">
+            Line
+           </option>
+           <option value="rect">
+            Rect
+           </option>
+           <option value="triangle">
+            Triangle
+           </option>
+           <option value="triangleMap">
+            triangleMap
+           </option>
+           
+           <option value="circle">
+            circle
+           </option>
+       </select>
+
+
+        <input type="color" name="color" id="color" value="#000000" onchange="onChangeColor(this.value)">
+        <input type="color" name="color" id="color" value="#ffffff" onchange="onChangeColorRange(this.value)">
+        <input type="range" name="range" id="range" min="2" max="35" value="4" onchange="showRange(this.value)">
+        <span class="show-range">4 lineWidth</span>
+
+        <button onclick="clearCanvas()">Clear</button>
+        <a href="#" onclick="downloadCanvas(this)" download="myphoto">Download</a>
+        <input type="file" class="file-input btn" name="image" onchange="onImgInput(event)" />
+
+        <button class="btn" onclick="uploadImg()">Upload Image from Canvas</button>
+    </section>
+
+    <div class="canvas-container">
+        <canvas id="my-canvas" width="400" height="400">
+        Update your browser to enjoy canvas!
+    </canvas>
+    </div>
+    <script src="./js/up-down-services.js"></script>
+    <script src="./js/main-controler.js"></script>
+</body>
+
+</html>

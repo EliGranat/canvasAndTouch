@@ -1,0 +1,53 @@
+@font-face {
+    font-family: symbols;
+    src: url(../fonts/fa-solid-900.ttf);
+}
+
+canvas {
+    display: block;
+    margin: 20px auto;
+    background-color: cornsilk;
+}
+
+.canvas-container {
+    background-color: brown;
+    padding: 10px;
+    margin: 0 auto;
+    width: 90vw;
+    height: 100vh;
+}
+
+.tools-user {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(184, 135, 11, 0.459);
+    height: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-modal-opt {
+    position: fixed;
+    right: 20px;
+    top: 15px;
+    height: 50px;
+    width: 50px;
+    font-family: symbols;
+}
+
+.btn-modal-opt:after {
+    content: '\f085';
+    font-size: 48px;
+}
+
+.copy {
+    position: fixed;
+    top: 50%;
+    background-color: darkgrey;
+    height: 50px;
+    cursor: pointer;
+}
