@@ -1,3 +1,5 @@
+*{margin:0;
+Padding:0;}
 @font-face {
     font-family: symbols;
     src: url(../fonts/fa-solid-900.ttf);
@@ -24,6 +26,7 @@ canvas {
     transform: translateX(-50%);
     background-color: rgba(184, 135, 11, 0.459);
     height: 15vh;
+witdh:100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -32,8 +35,8 @@ canvas {
 
 .btn-modal-opt {
     position: fixed;
-    right: 20px;
-    top: 15px;
+    left:10px
+    bottom:10px
     height: 50px;
     width: 50px;
     font-family: symbols;
