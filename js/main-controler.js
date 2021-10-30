@@ -195,5 +195,5 @@ function downloadCanvas(elLink) {
 function resizeCanvas() {
     const elContainer = document.querySelector('.canvas-container')
     gElCanvas.width = elContainer.offsetWidth - 40
-    gElCanvas.height = elContainer.offsetHeight - 70
+    gElCanvas.height = elContainer.offsetHeight - 40
 }

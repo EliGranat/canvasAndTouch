@@ -39,10 +39,12 @@ function doUploadImg(imgDataUrl, onSuccess) {
 
 // The next 2 functions handle IMAGE UPLOADING to img tag from file system: 
 function onImgInput(ev) {
+    console.log(ev);
     loadImageFromInput(ev, renderImg)
 }
 
 function loadImageFromInput(ev, onImageReady) {
+    console.log(onImageReady);
     document.querySelector('canvas').innerHTML = ''
     var reader = new FileReader()
 
@@ -54,6 +56,7 @@ function loadImageFromInput(ev, onImageReady) {
     }
     reader.readAsDataURL(ev.target.files[0])
 }
+
 
 
 function renderImg(img) {
